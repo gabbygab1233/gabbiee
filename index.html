@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<title>Gabbiee</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/png" href="https://i.imgur.com/ZVDTci5.png">
+<script language="JavaScript">
+
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+   
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+     
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+     
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+<style>
+    
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 1px}
+</style>
+<body>
+
+
+<div class="w3-content" style="max-width:1500px">
+
+
+<header style="padding:100px 32px">
+  <h1 class="w3-xlarge w3-panel w3-center w3-opacity ">Data Scientist</h1>
+  <h1 class="w3-panel w3-center w3-opacity" >Gabriel Joshua Miguel</h1>
+  <div class="w3-panel w3-center">
+    <iframe
+    allow="microphone;"
+    width="500"
+    height="600"
+    src="https://console.dialogflow.com/api-client/demo/embedded/4ad5604a-e1e1-489a-ba21-cb0f3d2dd77c">
+  
+  </iframe>
+</header>
+</body>
+</html>
